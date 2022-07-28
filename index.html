@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LP_Rock, Paper, Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js" defer></script>
+    <style>
+        img[alt="www.000webhost.com"] {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="title">
+        <h1> Rock Paper Scissors </h1>
+    </div>
+
+    <div class="content">
+        <div class="player">
+            <h2>You</h2>
+            <div class="choosing">
+                <img id="ch1" class="ch" src="images/rock.png" alt="rock" onclick="firstChoice()">
+                <img id="ch2" class="ch" src="images/paper.png" alt="paper" onclick="secondChoice()">
+                <img id="ch3" class="ch" src="images/scissors.png" alt="scissors" onclick="thirdChoice()">
+            </div>
+        </div>
+        <div class="computer">
+            <h2>Computer</h2>
+            <div class="compChoosing" id="compCh">
+                <img id="que1" class="que" src="images/question.png" alt="question">
+                <img id="que2" class="que" src="images/rock.png" alt="rock">
+                <img id="que3" class="que" src="images/paper.png" alt="paper">
+                <img id="que4" class="que" src="images/scissors.png" alt="scissors">
+            </div>
+        </div>
+    </div>
+
+    <div class="final">
+        <h1 id="won"> You Won ! </h1>
+        <h1 id="compwon"> Computer Won ! </h1>
+        <h1 id="draw"> Draw ! </h1>
+    </div>
+
+    <div id="another">
+        <button type="button" class="button" onClick="refreshPage()"><h1 id="playagain"> Play Again </h1></button>
+    </div>
+
+
+</body>
+
+</html>

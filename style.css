@@ -1,0 +1,158 @@
+body {
+    margin: 0%;
+    background-color: #41b3a3;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.player,
+.computer {
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.choosing,
+.compChoosing {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+h1 {
+    font-size: 3em;
+    color: #194942;
+}
+
+h2 {
+    font-size: 2em;
+    color: white;
+}
+
+.ch {
+    padding: 2%;
+    width: 15%;
+}
+
+#ch1 {
+    display: block;
+    background-color: #41b3a3;
+    border-radius: 20%;
+}
+
+#ch2 {
+    display: block;
+    background-color: #41b3a3;
+    border-radius: 20%;
+}
+
+#ch3 {
+    display: block;
+    background-color: #41b3a3;
+    border-radius: 20%;
+}
+
+#que1 {
+    display: block;
+}
+
+#que2 {
+    background-color: white;
+    border-radius: 1em;
+    display: none;
+}
+
+#que3 {
+    background-color: white;
+    border-radius: 1em;
+    display: none;
+}
+
+#que4 {
+    background-color: white;
+    border-radius: 1em;
+    display: none;
+}
+
+.que {
+    padding: 2%;
+    width: 18%;
+}
+
+#ch1:hover,
+#ch2:hover,
+#ch3:hover {
+    background-color: white;
+    border-radius: 20%;
+}
+
+.final {
+    margin-top: 4%;
+}
+
+#won {
+    display: none;
+}
+
+#compwon {
+    display: none;
+}
+
+#draw {
+    display: none;
+}
+
+#another {
+    display: none;
+    border: none;
+    background-color: white;
+    border-radius: 2em;
+}
+
+button {
+    border: none !important;
+    border-radius: 2em;
+    padding: 1em;
+}
+
+@media (max-width:40em) {
+    .choosing,
+    .compChoosing {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2em;
+    }
+    .ch {
+        width: 30%;
+    }
+    .que {
+        width: 30%;
+    }
+    .player,
+    .computer {
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2em;
+        color: #194942;
+    }
+    #playagain {
+        font-size: 1.5em;
+    }
+}
